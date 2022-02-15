@@ -19,12 +19,12 @@ print(bedwarsCoins)
 ```Python
 import bedwars
 
-bedwarsWins = bedwars.wins('TotallyNotHashim')
+bedwarsWins = bedwars.wins("Pusdusk")
 print(bedwarsWins)
 ```
 ```Python
 import bedwars
 
-bedwarsLosses = bedwars.losses('TotallyNotHashim')
+bedwarsLosses = bedwars.losses("TheMoonThatRises")
 print(bedwarsLosses)
 ```
