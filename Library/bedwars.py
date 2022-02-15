@@ -1,8 +1,10 @@
 import requests
 import json
 
+#API Key
 headers = {"API-Key": "6e534e10-e088-4462-8b09-5b89e7d0398e"}
 
+#Find the Amount of Coins
 def coin(username):
     url = f"https://api.hypixel.net/player?name={username}"
     response = requests.get(url, headers=headers)
@@ -19,6 +21,7 @@ def coin(username):
 
     return False
 
+#Number of Wins
 def wins(username):
     url = f"https://api.hypixel.net/player?name={username}"
     response = requests.get(url, headers=headers)
@@ -34,7 +37,8 @@ def wins(username):
         return wins
 
     return False
-
+    
+#Number of Losses
 def losses(username):
     url = f"https://api.hypixel.net/player?name={username}"
     response = requests.get(url, headers=headers)

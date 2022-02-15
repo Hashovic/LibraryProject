@@ -1,8 +1,11 @@
+#Imports the bedwars module from the Library folder
 from Library.bedwars import *
 run = True
 
+#Makes infinte loop because "run" is equal to True
 while run:
-    choice = int(input("Write '1' if you want to check for number of coins\nWrite '2' if you want ot check for wins\nWrite '3' if you want to check the losses\n"))
+    #Takes inputs 1, 2, and 3 to find out which output you want
+    choice = int(input("Type '1' if you want to check for number of coins\nType '2' if you want to check for wins\nType '3' if you want to check the losses\n"))
     if choice == 1:
         user = input("Please write the username:\n")
         print(coin(user))
@@ -15,4 +18,4 @@ while run:
         user = input("Please write the username:\n")
         print(losses(user))
     else:
-        run = False
+        print("Invalid Input\n")
